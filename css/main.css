@@ -211,9 +211,9 @@ body {
 
 .modal-close {
   position: absolute;
+  width: 30px;
   top: 8px;
   right: 8px;
-  width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -252,8 +252,8 @@ body {
 
 .input-icon {
   position: absolute;
-  left: 12px;
   top: 50%;
+  left: 12px;
   transform: translateY(-50%);
   fill: var(--title-text-color);
   transition-property: outline, fill;
@@ -398,8 +398,8 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
   left: 0;
+  height: 4px;
   bottom: -1px;
   background: #2196f3;
   border-radius: 2px;
@@ -528,8 +528,8 @@ body {
 .examples-list .label {
   position: absolute;
   width: 100%;
-  height: 70px;
   left: 0;
+  height: 70px;
   bottom: 0;
   padding: 27px 0;
   background: rgba(47, 48, 58, 0.8);
@@ -792,9 +792,9 @@ body {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 100%;
   left: 0;
+  height: 100%;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;

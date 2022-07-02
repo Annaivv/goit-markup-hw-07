@@ -11,3 +11,10 @@
   border-color: $bc;
   border-radius: $br;
 }
+
+@mixin absolute($pos: absolute, $width: 100%, $top: 0, $left: 0) {
+  position: $pos;
+  width: $width;
+  top: $top;
+  left: $left;
+}

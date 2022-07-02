@@ -15,10 +15,8 @@
 }
 
 .examples-list .label {
-  position: absolute;
-  width: 100%;
+  @include absolute($top: null);
   height: 70px;
-  left: 0;
   bottom: 0;
   padding: 27px 0;
   background: rgba(47, 48, 58, 0.8);

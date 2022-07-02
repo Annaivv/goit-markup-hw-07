@@ -46,10 +46,8 @@
 
 .current::before {
   content: "";
-  position: absolute;
-  width: 100%;
+  @include absolute($top: null);
   height: 4px;
-  left: 0;
   bottom: -1px;
 
   background: #2196f3;
