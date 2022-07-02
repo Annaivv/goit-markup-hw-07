@@ -73,7 +73,7 @@
 
 .portfolio-info {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  @include border($bc: #eeeeee, $br: null);
 }
 
 .portfolio-title {

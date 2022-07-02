@@ -17,8 +17,7 @@
   @extend %flex-centered;
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  @include border($bc: #afb1b8);
   fill: #afb1b8;
 
   transition-property: fill, border-color;

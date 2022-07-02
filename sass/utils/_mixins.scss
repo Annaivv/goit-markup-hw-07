@@ -4,3 +4,10 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin border($bw: 1px, $bs: solid, $bc: transparent, $br: 4px) {
+  border-width: $bw;
+  border-style: $bs;
+  border-color: $bc;
+  border-radius: $br;
+}

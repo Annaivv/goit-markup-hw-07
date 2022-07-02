@@ -80,9 +80,8 @@
 
   flex-grow: 1;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include border($bc: rgba(255, 255, 255, 0.3));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
 
   background-color: transparent;
 }
@@ -110,7 +109,7 @@
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include border($bc: rgba(255, 255, 255, 0.3), $br: null);
 }
 
 .subscribe-text {
