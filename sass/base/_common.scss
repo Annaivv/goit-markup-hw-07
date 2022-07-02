@@ -27,16 +27,13 @@ body {
   background-color: #2f303a;
 }
 
-.connect,
-.footer-contacts {
+.connect {
   transition-property: color;
   @extend %transitions;
 }
 
 .connect:hover,
-.connect:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
+.connect:focus {
   color: var(--accent-color);
 }
 

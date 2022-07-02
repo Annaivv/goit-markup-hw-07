@@ -9,11 +9,11 @@
   align-items: baseline;
 }
 
-.footer-contacts {
+.footer__connect {
   margin-right: 70px;
 }
 
-.footer .logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -28,21 +28,17 @@
   line-height: 1.71;
 }
 
-.footer-contacts {
+.footer__contacts {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
+  @extend %link;
 }
 
-// .footer li {
-//   margin-bottom: 9px;
-// }
+.footer__social {
+  margin-right: 93px;
+}
 
-// .footer li:last-child {
-//   margin-bottom: 0;
-// }
-
-.footer-soc-title,
-.footer-form-title {
+.footer__title {
   margin-bottom: 20px;
 
   @include font(null, 14px, 1.14, null);
@@ -50,7 +46,7 @@
   color: #ffffff;
 }
 
-.footer__social {
+.social__link--white {
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 
@@ -58,22 +54,17 @@
   @extend %transitions;
 }
 
-.footer__social:hover,
-.footer__social:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-soc-media {
-  margin-right: 93px;
-}
-
-.footer-send {
+.subscribe__form {
   display: flex;
   width: 570px;
 }
 
-.footer-email {
-  /* max-width: 358px; */
+.subscribe__input {
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -86,13 +77,13 @@
   background-color: transparent;
 }
 
-.footer-email::placeholder {
+.subscribe__input::placeholder {
   line-height: 1.25;
 
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-button {
+.subscribe__button {
   @extend %flex-centered;
 
   width: 200px;
@@ -103,16 +94,10 @@
   color: #ffffff;
   fill: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   outline: none;
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  @include border($bc: rgba(255, 255, 255, 0.3), $br: null);
-}
-
-.subscribe-text {
+.subscribe__text {
   display: inline-flex;
   align-items: center;
 
