@@ -48,14 +48,14 @@ img {
   overflow: hidden;
 }
 
-.overlay, .portfolio-list .item, .footer__social, .clients-link, .team__link, .connect__icon, .menu__link, .form-field .form-input,
+.overlay, .portfolio-list .item, .footer__social, .clients__link, .team__link, .connect__icon, .menu__link, .form-field .form-input,
 .form-field textarea, .input-icon, .modal-close, .modal, .backdrop, .button, .connect,
 .footer-contacts {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button, .clients-link, .features__icon, .nav, .header__container, .social__link, .social {
+.subscribe-button, .clients__link, .clients, .features__icon, .nav, .header__container, .social__link, .social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +65,7 @@ img {
   color: var(--title-text-color);
 }
 
-.connect__link, .menu__link, .logo, .social__link {
+.connect__link, .menu__link, .logo {
   text-decoration: none;
   color: inherit;
 }
@@ -584,22 +584,17 @@ body {
   fill: #ffffff;
 }
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-}
-
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
   margin-left: 30px;
 }
 
-.clients-item:first-child {
+.clients__item:first-child {
   margin-left: 0;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border-width: 1px;
@@ -610,8 +605,8 @@ body {
   transition-property: fill, border-color;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
