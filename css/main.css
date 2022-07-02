@@ -48,14 +48,14 @@ img {
   overflow: hidden;
 }
 
-.overlay, .portfolio-list .item, .footer-soc-link, .clients-link, .masters-soc-link, .contact-icon, .site-nav .link, .form-field .form-input,
+.overlay, .portfolio-list .item, .footer-soc-link, .clients-link, .masters-soc-link, .connect__icon, .menu__link, .form-field .form-input,
 .form-field textarea, .input-icon, .modal-close, .modal, .backdrop, .button, .contacts,
 .footer-contacts {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button, .clients-link, .nav, .main-nav, .masters-soc-link,
+.subscribe-button, .clients-link, .nav, .header__container, .masters-soc-link,
 .footer-soc-link {
   display: flex;
   align-items: center;
@@ -168,8 +168,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-
-.logo > span {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -364,16 +363,19 @@ body {
 }
 
 /* Site nav */
-.site-nav {
+.menu {
   display: flex;
+}
+
+.header__menu {
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.menu__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -385,12 +387,12 @@ body {
   transition-property: color;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.menu__link.current {
   color: var(--accent-color);
 }
 
@@ -406,34 +408,39 @@ body {
 }
 
 /* Contact links */
-.contact-list {
+.connect {
   display: flex;
   margin-left: auto;
 }
 
-.contact-list.item {
+.connect__item {
   color: var(--primary-text-color);
 }
 
-.contacts {
+.connect__item:hover,
+.connect__item:focus {
+  color: var(--accent-color);
+}
+
+.connect__link {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.contact-list .item + .item {
+.connect__item + .connect__item {
   margin-left: 50px;
 }
 
-.contact-icon {
+.connect__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
   transition-property: fill;
 }
 
-.contact-list a:hover .contact-icon,
-.contact-list a:focus .contact-icon {
+.connect__link:hover .connect__icon,
+.connect__link:focus .connect__icon {
   fill: var(--accent-color);
 }
 
