@@ -30,7 +30,8 @@
 
   background: #ffffff;
 
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: filter;
+  @extend %transitions;
 }
 
 .portfolio-list .item:not(:nth-child(3n)) {
@@ -68,7 +69,8 @@
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  @extend %transitions;
 }
 
 .portfolio-info {

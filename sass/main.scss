@@ -4,14 +4,15 @@
 @import "./base/common";
 
 @import "./utils/hidden";
+@import "./utils/placeholders";
 
 @import "./components/container";
 @import "./components/button";
 @import "./components/logo";
+@import "./components/modal";
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/modal";
 @import "./layout/features";
 @import "./layout/examples";
 @import "./layout/team";

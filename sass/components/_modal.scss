@@ -8,7 +8,8 @@
 
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+  @extend %transitions;
 }
 
 .modal {
@@ -26,7 +27,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  @extend %transitions;
 }
 
 .is-hidden {
@@ -53,7 +55,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: fill;
+  @extend %transitions;
 }
 
 .modal-close:hover .close-icon {
@@ -88,8 +92,8 @@
 
   fill: var(--title-text-color);
 
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, fill;
+  @extend %transitions;
 }
 
 .form-field .form-input,
@@ -132,8 +136,8 @@
 
 .form-field .form-input,
 .form-field textarea {
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color;
+  @extend %transitions;
 }
 
 .form-input:focus,
