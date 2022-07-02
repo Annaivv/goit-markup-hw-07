@@ -49,17 +49,21 @@ img {
 }
 
 .overlay, .portfolio-list .item, .footer-soc-link, .clients-link, .masters-soc-link, .connect__icon, .menu__link, .form-field .form-input,
-.form-field textarea, .input-icon, .modal-close, .modal, .backdrop, .button, .contacts,
+.form-field textarea, .input-icon, .modal-close, .modal, .backdrop, .button, .connect,
 .footer-contacts {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button, .clients-link, .nav, .header__container, .masters-soc-link,
+.subscribe-button, .clients-link, .features__icon, .nav, .header__container, .masters-soc-link,
 .footer-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.features__title {
+  color: var(--title-text-color);
 }
 
 body {
@@ -84,10 +88,6 @@ body {
   color: inherit;
 }
 
-.title {
-  color: var(--title-text-color);
-}
-
 .section-title {
   margin-bottom: 50px;
   text-align: center;
@@ -101,13 +101,13 @@ body {
   background-color: #2f303a;
 }
 
-.contacts,
+.connect,
 .footer-contacts {
   transition-property: color;
 }
 
-.contacts:hover,
-.contacts:focus,
+.connect:hover,
+.connect:focus,
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
@@ -410,6 +410,9 @@ body {
 /* Contact links */
 .connect {
   display: flex;
+}
+
+.header__connect {
   margin-left: auto;
 }
 
@@ -458,7 +461,7 @@ body {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto 30px;
   max-width: 696px;
   color: #ffffff;
@@ -469,7 +472,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero-button,
+.hero__button,
 .send-button {
   margin: 0 auto;
   padding: 10px 32px;
@@ -483,36 +486,33 @@ body {
   letter-spacing: 0.06em;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
-.features-list .item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.features-list .item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.features__icon {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--secondary-bg-color);
 }
 
-.features-list .title {
+.features__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.features-list .text {
+.features__text {
   line-height: 1.71;
 }
 

@@ -20,9 +20,9 @@ body {
   color: inherit;
 }
 
-.title {
-  color: var(--title-text-color);
-}
+// .title {
+//   color: var(--title-text-color);
+// }
 
 .section-title {
   margin-bottom: 50px;
@@ -36,14 +36,14 @@ body {
   background-color: #2f303a;
 }
 
-.contacts,
+.connect,
 .footer-contacts {
   transition-property: color;
   @extend %transitions;
 }
 
-.contacts:hover,
-.contacts:focus,
+.connect:hover,
+.connect:focus,
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
