@@ -36,6 +36,7 @@
 
   transition-property: color;
   @extend %transitions;
+  @extend %link;
 }
 
 .menu__link:hover,
@@ -78,6 +79,7 @@
 .connect__link {
   display: flex;
   @include font(500, null, 1.14, 0.02em);
+  @extend %link;
 }
 
 .connect__item + .connect__item {

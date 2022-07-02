@@ -1,20 +1,20 @@
-.examples-list {
+.examples {
   display: flex;
 }
 
-.examples-list .item {
+.examples__item {
   width: calc((100% - 60px) / 3);
 }
 
-.examples-list .item:not(:last-child) {
+.examples__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
 
-.examples-list .thumb {
+.examples__thumb {
   position: relative;
 }
 
-.examples-list .label {
+.examples__label {
   @include absolute($top: null);
   height: 70px;
   bottom: 0;
