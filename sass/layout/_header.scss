@@ -29,9 +29,7 @@
   padding-bottom: 32px;
 
   color: var(--title-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, null, 1.14, 0.02em);
 
   transition-property: color;
   @extend %transitions;
@@ -70,9 +68,7 @@
 
 .contacts {
   display: flex;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, null, 1.14, 0.02em);
 }
 
 .contact-list .item + .item {

@@ -45,8 +45,7 @@
 .footer-form-title {
   margin-bottom: 20px;
 
-  font-size: 14px;
-  line-height: 16px;
+  @include font(null, 14px, 1.14, null);
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -120,8 +119,6 @@
 
   margin-right: 10px;
 
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, null, 1.88, 0.06em);
   text-align: center;
 }
