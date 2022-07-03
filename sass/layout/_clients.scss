@@ -6,10 +6,9 @@
   width: 170px;
   height: 92px;
   margin-left: 30px;
-}
-
-.clients__item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .clients__link {
@@ -21,10 +20,9 @@
 
   transition-property: fill, border-color;
   @extend %transitions;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }

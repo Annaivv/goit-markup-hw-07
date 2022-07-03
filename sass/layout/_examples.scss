@@ -4,10 +4,9 @@
 
 .examples__item {
   width: calc((100% - 60px) / 3);
-}
-
-.examples__item:not(:last-child) {
-  margin-right: var(--typical-margin);
+  &:not(:last-child) {
+    margin-right: var(--typical-margin);
+  }
 }
 
 .examples__thumb {

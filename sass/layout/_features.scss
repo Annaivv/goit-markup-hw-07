@@ -4,10 +4,9 @@
 
 .features__item {
   width: calc((100% - 90px) / 4);
-}
-
-.features__item:not(:last-child) {
-  margin-right: var(--typical-margin);
+  &:not(:last-child) {
+    margin-right: var(--typical-margin);
+  }
 }
 
 .features__icon {
